@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class TP01 {
+
+	public static void main(final String[] args) {
+		// Kerjakan soalnya di sini
+        Scanner iqbaal = new Scanner(System.in);
+        int jumlahMenit = iqbaal.nextInt();
+    
+        int waktu = 0; 
+        int film = 30; 
+        
+        if(jumlahMenit >= 10000000){
+            System.exit(0);
+        }
+           
+        do {
+            film = film * 2;
+      
+            waktu = waktu + 15;
+
+        } while (film < jumlahMenit); 
+    
+            System.out.println(waktu);
+
+     iqbaal.close();   
+	}
+}
